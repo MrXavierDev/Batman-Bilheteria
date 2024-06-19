@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+     *{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 60%;
+}
+ul{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 5s;
+    font-family:'Kdam Thmor Pro',sans-serif;
+}
+li:hover{
+    color: #D21617;
+}
+#logo{
+    width: 100px;
+    height: 80px;
+}
+#banner{
+    background-image: url(https://images.wallpapersden.com/image/download/the-batman-4k-mobile-cool_bWdua2WUmZqaraWkpJRobWllrWdma2VnZWZuaWo.jpg);
+    background-position: 50% 50%; 
+    background-size:cover; 
+    background-color: #fff;
+    width: 100%;
+    height: 1000px;
+}
+
+.quadrado{
+            width: 500px;
+            height: 500px;
+            background-color:black;
+            padding: 8px 10px;
+            border-radius: 5px;
+            font-size: 11px;
+            margin-top: 250px;
+            display: flex;
+            margin-left: 500px;
+            margin-bottom: 100px;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: none;
+            outline: none;
+         }
+         .contatar{
+            list-style: none;
+            background-color: black;
+            cursor: pointer;
+            position: absolute;
+            color: beige;
+            font-size: 70px;
+            font-family: "Oswald",sans-serif;
+            margin-bottom: 700px;
+         }
+         
+         form{
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            height: 390px;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+       
+        form input, form textarea{
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+        form button{
+            padding: 15px;
+            background-color: #ff5361;
+            color: #fff;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px;
+        }
+        
+        
+         footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation{
+    display:none;
+}
+.footer-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width:768px){
+    .footer-navigation{
+        display: block;}
+
+        nav{
+            display:none;
+        }
+
+        #banner{
+            background-position: 40%;
+        }
+
+        #trailer-container{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+        .trailer{
+            width:100%;
+        }
+        #sinopse{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            .description{
+                width: 100%;
+            }
+            .button{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .cards-content{
+                grid-template-columns: 1fr;
+                margin-top: 150px;
+            }  
+}
+.button:hover{
+    background-color: #D21617;
+    color: #fff;
+}
+
+         </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./Batman Logo.jpe"/>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                <li>Home</li>
+                </a>
+              <a href="./contato.html">
+                <li>Contato</li>
+              </a>
+              <a href="./fotos.html">
+                <li>Fotos</li>
+              </a>
+              <a href="./comentarios.html">
+                <li>Comentários</li>
+              </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner">
+    <div class="quadrado">
+    <div class="contatar">Fale Conosco</div>
+
+    <form>
+        <input type="text" id="name" placeholder="Vosso Nome" required>
+        <input type="email" id="email" placeholder="Email id" required>
+        <textarea id="message" rows="4" placeholder="Como podemos ajuda-lo?"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+</form>
+</div>
+</div>
+<footer>
+    <img style="object-fit:contain"; id="logo" src="./Batman Logo.jpe"/>
+    <span> Todos os Direitos Reservados © </span>
+    <span> Desenvolvido por: H.X Lunelli</span>
+    <nav class="footer-navigation">
+        <ul class="footer-list">
+
+            <a href="./index.html">
+                <li>Home</li>
+                </a>
+              <a href="./contato.html">
+                <li>Contato</li>
+              </a>
+              <a href="./fotos.html">
+                <li>Fotos</li>
+              </a>
+              <a href="./comentarios.html">
+                <li>Comentários</li>
+              </a>
+        </ul>
+
+    </nav>
+</footer>           
+</body>
+</html>

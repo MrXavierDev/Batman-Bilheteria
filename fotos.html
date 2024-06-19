@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+     *{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 60%;
+}
+ul{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 5s;
+    font-family:'Kdam Thmor Pro',sans-serif;
+}
+li:hover{
+    color: #D21617;
+}
+#logo{
+    width: 100px;
+    height: 80px;
+}
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro',sans-serif
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url(https://noticiasdatv.uol.com.br/media/uploads/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros.jpg);
+}
+.banner-2{
+    background-image: url(https://images.toofab.com/image/9b/4by3/2022/03/08/9b0101ed71c6448d85214ef4b3cd8350_md.jpg);
+}
+.banner-3{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg);
+}
+.banner-4{
+    background-image: url(https://ovicio.com.br/wp-content/uploads/2022/03/20220303-ovicio-batman-andy-serkis-alfred-730x365.jpg);
+}
+.banner-5{
+    background-image: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/01/colin-farrell-the-batman-penguin-social.jpeg);
+}
+.banner-6{
+    background-image: url(https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/69fbe1c4-9efb-11ec-aa6e-9587410378a2/john-turturro.jpg);
+}
+.banner-7{
+    background-image: url(https://images.hindustantimes.com/img/2022/03/06/550x309/Paul_Dano_Batman_1646568513209_1646568513382.jpeg);
+}
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation{
+    display:none;
+}
+.footer-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width:768px){
+    .footer-navigation{
+        display: block;}
+
+        nav{
+            display:none;
+        }
+
+        #banner{
+            background-position: 40%;
+        }
+
+        #trailer-container{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+        .trailer{
+            width:100%;
+        }
+        #sinopse{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            .description{
+                width: 100%;
+            }
+            .button{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .cards-content{
+                grid-template-columns: 1fr;
+                margin-top: 150px;
+            }  
+}
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="./Batman Logo.jpe"/>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                <li>Home</li>
+                </a>
+              <a href="./contato.html">
+                <li>Contato</li>
+              </a>
+              <a href="./fotos.html">
+                <li>Fotos</li>
+              </a>
+              <a href="./comentarios.html">
+                <li>Comentários</li>
+              </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="actor-cards-container">
+        <div class="cards-content">
+            <div class=" card banner-1 ">Robert Pattison-Batman</div>
+            <div class=" card banner-2 ">Zoe Kravitz-Mulher Gato</div>
+            <div class=" card banner-3 ">Jeffrey Wright-Gordon</div>
+            <div class=" card banner-4 ">Andy Serkis-Alfred</div>
+            <div class=" card banner-5 ">Colin Farrell-Pinguim</div>
+            <div class=" card banner-6 ">John Turturro-Carmine Falcone</div>
+            <div class=" card banner-7 ">Paul Dano-Charada</div>
+        </div>
+    </div>      
+    <footer>
+        <img style="object-fit:contain"; id="logo" src="./Batman Logo.jpe"/>
+        <span> Todos os Direitos Reservados © </span>
+        <span> Desenvolvido por: H.X Lunelli</span>
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+    
+                <a href="./index.html">
+                    <li>Home</li>
+                    </a>
+                  <a href="./contato.html">
+                    <li>Contato</li>
+                  </a>
+                  <a href="./fotos.html">
+                    <li>Fotos</li>
+                  </a>
+                  <a href="./comentarios.html">
+                    <li>Comentários</li>
+                  </a>
+            </ul>
+    
+        </nav>
+    </footer>      
+</body>
+</html>
